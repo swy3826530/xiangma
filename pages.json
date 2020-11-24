@@ -1,0 +1,121 @@
+{
+	"pages": [
+		{
+		    "path" : "pages/index/init",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,	
+		{
+		    "path" : "pages/index/lauth",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"titleNView": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+		    }
+		    
+		}
+		,
+		{
+			"path": "pages/user/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+		}
+		,
+		{
+			"path": "pages/user/register/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"enablePullDownRefresh": false
+			}
+		
+		}
+		,
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+		,		
+		{
+			"path": "pages/paint-circle/paint-circle-list",
+			"style": {
+				"navigationBarTitleText": "作品圈",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/paint-circle/createPaintsMessage",
+			"style": {
+				"navigationBarTitleText": "发布作品",
+				"enablePullDownRefresh": false
+			}
+		
+		}
+		,
+		{
+			"path": "pages/user/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/test/test",
+            "style" : {
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "垂直排列，略缩图显示多图"
+            }
+            
+        }
+        ,{
+            "path" : "pages/test1/test1",
+            "style" : {
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "垂直排列，图文混排"
+            }
+            
+        }
+        
+        
+    ],
+	"tabBar": {
+		"color": "#C3B8B4",
+		"selectedColor": "#F76605",
+		"borderStyle": "white",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/paint-circle/paint-circle-list",
+				"text": "发现",
+				"iconPath": "static/img/find.png",
+				"selectedIconPath": "static/img/find_b.png"
+			},
+			{
+				"pagePath": "pages/user/my/my",
+				"text": "我的",
+				"iconPath": "static/img/my.png",
+				"selectedIconPath": "static/img/my_b.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
