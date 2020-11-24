@@ -84,14 +84,14 @@
 		margin-top: 3.2rem;
 	}
 	.content button{
-		width: 250px;
-		height: 44px;
-		border-radius: 22px;
+		width: 14.7rem;
+		height: 2.58rem;
+		border-radius: 1.29rem;
 		color: white;
 		background: linear-gradient(to right,#00CFE8,#4BAEFD)
 	}
 	.content input {
-		padding: 0 30px !important;
+		padding: 0 1.76rem !important;
 		box-sizing: border-box;
 	}
 	.register{
@@ -99,22 +99,22 @@
 		align-items: center;
 		justify-content: center;
 		margin: 0 auto;
-		width: 56px;
-		height: 20px;
-		margin: 9px auto 51px auto;
+		width: 3.29rem;
+		height: 1.17rem;
+		margin: .52rem auto 3rem auto;
 	}
 	.register text{
 		color: #04BEFD;
-		font-size: 14px;
+		font-size: .82rem;
 	}
 	.uni-field,input{
 		
 		display: flex;
-		width: 250px;
+		width: 14.7rem;
 		height: 44px;
 		padding: 0;
-		border-radius: 22px;
-		margin-top: 14px;
+		border-radius: 1.29rem;
+		margin-top: .82rem;
 		border: 2px solid #4BAEFD;
 	}
 	.uni-field:after{

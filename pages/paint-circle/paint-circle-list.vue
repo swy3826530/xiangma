@@ -3,12 +3,12 @@
 		<!-- 头部 -->
 		<view class="header">
 			<view class="back">
-				<text class="left"><img src="../../static/img/message.png"></text>
-				<text class="right"><img src="../../static/img/iphone.png"></text>
-				<!-- <uni-icons type="camera" size="30"/> -->
+				<image class="left" style="z-index:5;" src="../../static/img/message.png"></image>
+				<image class="right" style="z-index:5;" src="../../static/img/iphone.png"></image>
+				<image style="width:100%;top:-104rpx;" mode="widthFix" src="../../static/img/background.png"></image>
 			</view>
 			<view class="headortrait">
-				<image src="../../static/img/head.png" alt=""/>
+				<image src="../../static/img/head.png"/>
 			</view>
 		</view>
 		<!-- 内容部分 -->
@@ -56,19 +56,21 @@
 					<view class="evaluate_wrap">
 						<!-- 如果有用户点赞则显示 -->
 						<view class="like_list">
-							<image style="width:14px;height:12px;margin-right:5px;" src="../../static/img/aixin.png"></image>
+							<image style="width:28rpx;height:24rpx;margin-right:10rpx;" src="../../static/img/aixin.png"></image>
 							<text>佳佳老师</text>
 						</view>
 						<!-- 评价人的昵称 及评价的分数-->
-						<view class="evaluate_nick">
-							佳佳老师：
-							<view class="pinglun">
-								<image style="width:14px;height:12px;" src="../../static/img/aixin.png"></image>
-							</view >
+						<view>
+							<view class="evaluate_nick">
+								<text>佳佳老师：</text>
+								<view class="pinglun">
+									<image style="width:28rpx;height:24rpx;" src="../../static/img/xingxing.png"></image>
+								</view >
+							</view>
+							<!-- 评价的内容  做个判断 如果是语音则显示-->
+							<view class="evaluate_con">央美少年班直击各大美院附属中学，备考央美清华班冲击。</view>
+							<view></view>
 						</view>
-						<!-- 评价的内容  做个判断 如果是语音则显示-->
-						<view class="evaluate_con">央美少年班直击各大美院附属中学，备考央美清华班冲击。</view>
-						<view></view>
 					</view>
 				</view>
 			</view>
@@ -347,84 +349,85 @@
 		position: relative;
 	}
 	.back{
-		background-image: url("../../static/img/background.png");
-		height: 14.1rem;
-		width: 100%;
+		
 	}
-	.back .left{
+	.left{
 		position: relative;
-		left: .94rem;
-		top: 1.17rem;
+		left: 32rpx;
+		top: 66rpx;
+		width: 40rpx;
+		height: 34rpx;
 	}
 	.right{
 		float: right;
 		position: relative;
-		right: .94rem;
-		top: 1.17rem;
+		right: 32rpx;
+		top: 66rpx;
+		width: 40rpx;
+		height: 34rpx;
 	}
 	.headortrait{
-		width: 4.11rem;
-		height: 4.11rem;
-		padding: .29rem;
-		right: .94rem;
-		bottom: -2.29rem;
-		-webkit-border-radius: .58rem;
-		border-radius: .58rem;
+		width: 140rpx;
+		height: 140rpx;
+		padding: 10rpx;
+		right: 32rpx;
+		bottom: 32rpx;
+		border-radius: 20rpx;
 		background-color: #ffffff;
-		border: .06rem solid #878787;
+		border: 2rpx solid #878787;
 		position: absolute;
-		z-index: 999;
+		z-index: 99;
 	}
 	.headortrait image{
-		width: 4.12rem;
-		height:4.12rem;
+		width: 140rpx;
+		height:140rpx;
 	}
 	.bodyer {
-		margin-top: 3.23rem !important;
-		width: 343px;
+		margin-top: 20rpx !important;
+		width: 686rpx;
 		margin: auto;
 	}
 	.bodyer .content{
 		display: flex;
 		position: relative;
-		padding-bottom: 10px;
-		border-bottom: 1px solid #F2F2F2;
-		margin-bottom: 10px;
+		padding-bottom: 20rpx;
+		border-bottom: 2rpx solid #F2F2F2;
+		margin-bottom: 20rpx;
 	}
 	.bodyer .content .head_img{
-		margin-right: 10px;
+		margin-right: 20rpx;
 	}
 	.bodyer .content .head_img image{
-		width: 40px;
-		height: 40px;
+		width: 80rpx;
+		height: 80rpx;
 	}
 	.bodyer .content .nick{
 		color: #4BAEFD;
-		font-size: 16px;
+		font-size: 32rpx;
 		display: flex;
 		font-weight: bold;
 		align-items: center;
-		line-height: 30px;
+		line-height: 60rpx;
 	}
 	.bodyer .content .date{
-		height: 40px;
-		line-height: 40px;
+		height: 80rpx;
+		line-height: 80rpx;
 		position: absolute;
 		right: 0;
-		font-size: 12px;
+		font-size: 24rpx;
 		color: #989898;
 	}
 	.publish_content .publish_text text{
 		color: #333333;
-		font-size: 16px;
-		line-height: 22.4px;
+		font-size: 32rpx;
+		line-height: 44.8rpx;
 	}
 	.publish_content .publish_img{
-		margin-top: 10px;
+		margin-top: 20rpx;
 	}
 	.publish_content .publish_img image{
-		width: 90px;
-		height: 90px;
+		width: 180rpx;
+		height: 180rpx;
 	}
 	.operation{
 		display: flex;
@@ -432,39 +435,41 @@
 		margin-right: 14rpx;
 	}
 	.operation image{
-		width: 14px;
-		height: 13px;
+		width: 28rpx;
+		height: 26rpx;
 	}
 	.dianzan{
-		margin-right: 20px;
+		margin-right: 40rpx;
 	}
 	.evaluate{
-		margin-top: 30px;
-		width: 343px;
+		margin-top: 60rpx;
+		width: 686rpx;
 		background-color: #F7F7F7;
 	}
 	.evaluate_wrap{
-		padding: 6px 10px 6px 10px;
+		padding: 12rpx 20rpx 12rpx 20rpx;
 	}
 	.evaluate_nick{
-		font-size: 14px;
+		font-size: 28rpx;
 		color: #4BAEFD;
 		position: relative;
+		margin: 20rpx 0;
+		display: flex;
 	}
 	.like_list{
-		font-size: 14px;
+		font-size: 28rpx;
 		color: #4BAEFD;
 	}
 	.evaluate_nick .pinglun{
 		position: absolute;
 		right: 0;
 	}
-	.evaluate_nick .pinglun>img{
-		margin:0 1px;
+	.evaluate_nick .pinglun>image{
+		margin:0 2rpx;
 	}
 	.evaluate_con{
-		font-size: 14px;
+		font-size: 28rpx;
 		color: #333333;
-		line-height: 19px;
+		line-height: 38rpx;
 	}
 </style>
